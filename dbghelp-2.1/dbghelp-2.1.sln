@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dbghelp", "thirdparty\dbghelp-2.1\dbghelp2.vcxproj", "{CABA6161-CE7E-421E-B2DD-3D790CCD2088}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{7F9021CC-D235-4EFD-B61A-A184E79C015B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{641D9619-2190-4645-AB0E-C4566E5C84FB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_g3log", "demo\g3log\test_g3log.vcxproj", "{37499C20-74A9-4400-AAA6-33B8357C1ADC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CABA6161-CE7E-421E-B2DD-3D790CCD2088} = {CABA6161-CE7E-421E-B2DD-3D790CCD2088}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_lib", "0_lib", "{7D0EC5AB-5E4F-4119-A278-C14E507D0C41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_dll", "1_dll", "{BD2789BB-1924-47EE-A74E-450876838E60}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libdbghelp", "thirdparty\dbghelp-2.1\libdbghelp2.vcxproj", "{672FE3E7-4E2A-4216-85B3-78B4B4DAEDF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CABA6161-CE7E-421E-B2DD-3D790CCD2088}.Debug|x64.ActiveCfg = Debug|x64
+		{CABA6161-CE7E-421E-B2DD-3D790CCD2088}.Debug|x64.Build.0 = Debug|x64
+		{CABA6161-CE7E-421E-B2DD-3D790CCD2088}.Release|x64.ActiveCfg = Release|x64
+		{CABA6161-CE7E-421E-B2DD-3D790CCD2088}.Release|x64.Build.0 = Release|x64
+		{37499C20-74A9-4400-AAA6-33B8357C1ADC}.Debug|x64.ActiveCfg = Debug|x64
+		{37499C20-74A9-4400-AAA6-33B8357C1ADC}.Debug|x64.Build.0 = Debug|x64
+		{37499C20-74A9-4400-AAA6-33B8357C1ADC}.Release|x64.ActiveCfg = Release|x64
+		{37499C20-74A9-4400-AAA6-33B8357C1ADC}.Release|x64.Build.0 = Release|x64
+		{672FE3E7-4E2A-4216-85B3-78B4B4DAEDF1}.Debug|x64.ActiveCfg = Debug|x64
+		{672FE3E7-4E2A-4216-85B3-78B4B4DAEDF1}.Debug|x64.Build.0 = Debug|x64
+		{672FE3E7-4E2A-4216-85B3-78B4B4DAEDF1}.Release|x64.ActiveCfg = Release|x64
+		{672FE3E7-4E2A-4216-85B3-78B4B4DAEDF1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CABA6161-CE7E-421E-B2DD-3D790CCD2088} = {BD2789BB-1924-47EE-A74E-450876838E60}
+		{37499C20-74A9-4400-AAA6-33B8357C1ADC} = {641D9619-2190-4645-AB0E-C4566E5C84FB}
+		{7D0EC5AB-5E4F-4119-A278-C14E507D0C41} = {7F9021CC-D235-4EFD-B61A-A184E79C015B}
+		{BD2789BB-1924-47EE-A74E-450876838E60} = {7F9021CC-D235-4EFD-B61A-A184E79C015B}
+		{672FE3E7-4E2A-4216-85B3-78B4B4DAEDF1} = {7D0EC5AB-5E4F-4119-A278-C14E507D0C41}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD1AF7C0-BBB4-421E-9526-9770BEAA20FD}
+	EndGlobalSection
+EndGlobal
